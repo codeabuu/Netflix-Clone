@@ -15,7 +15,7 @@ class Movie(models.Model):
     uu_id = models.UUIDField(default=uuid.uuid4)
     title = models.CharField(max_length=255)
     description = models.TextField()
-    relese_date = models.DateField()
+    release_date = models.DateField()
     genre = models.CharField(max_length=100, choices=GENRE_CHOICES)
     length = models.PositiveIntegerField()
     image_card = models.ImageField(upload_to='movie_images/')
